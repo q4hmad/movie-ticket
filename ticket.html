@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Address book</title>
-  </head>
-  <body>
-    <div class="container">
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Die Harder</title>
+</head>
+
+<body>
+  <div class="container">
     <h1>Joy Cinema</h1>
-      <form>
-        <h3>Select Movie:</h3>
-        <div class="radio">
-          <label>
+    <form id="movieTicket">
+      <h3>Select Movie:</h3>
+      <div class="radio">
+        <label>
             <input type="radio" name="movie" value="Diehard1" checked>
             Die Hard
           </label>
-        </div>
-        <div class="radio">
-          <label>
+      </div>
+      <div class="radio">
+        <label>
             <input type="radio" name="movie" value="Diehard2">
             Die Hard 2
           </label>
-        </div>
-        <div class="radio">
-          <label>
+      </div>
+      <div class="radio">
+        <label>
             <input type="radio" name="movie" value="Diehard3">
             Die Hard with a Vengeance!!
           </label>
-        </div>
+      </div>
 
-        <h3>Select Time:</h3>
-        <div class="radio">
-          <label>
+      <h3>Select Time:</h3>
+      <div class="radio">
+        <label>
             <input type="radio" name="time" value="1100" checked>
             11:00am
           </label>
-        </div>
-        <div class="radio">
-          <label>
+      </div>
+      <div class="radio">
+        <label>
             <input type="radio" name="time" value="1400">
             2:00pm
           </label>
-        </div>
-        <div class="radio">
-          <label>
+      </div>
+      <div class="radio">
+        <label>
             <input type="radio" name="time" value="1700">
             5:00pm
           </label>
-        </div>
-        <h3>Enter your Age:</h3>
-        <div class="form-group">
-          <!-- <label for="age"></label> -->
-          <input type="text" class="form-control enter-age">
-        </div>
+      </div>
 
-        </div>
-      </form>
-    </div>
-  </body>
-  </html>
+      <h3>Enter your Age:</h3>
+      <div class="form-group">
+        <label for="age"></label>
+        <input type="text" class="form-control enter-age">
+      </div>
+      <button type="submit" class="btn">Submit</button>
+  </div>
+  </form>
+  </div>
+</body>
+
+</html>
