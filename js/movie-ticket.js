@@ -15,6 +15,6 @@ Ticket.prototype.ticketPrice = function() {
     var price = "$8.00";
   }
   return (this.movie + ", playing at " + this.time + ", costs " + price);
-}
+};
 
 exports.ticketModule = Ticket;

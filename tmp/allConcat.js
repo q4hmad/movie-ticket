@@ -25,3 +25,7 @@ $(document).ready(function(){
     $('#surveyResult').prepend('<p>Thank you, ' + email + ' has been added to our list!</p>');
   });
 });
+
+$(document).ready(function(){
+  $('#time').text(moment());
+});

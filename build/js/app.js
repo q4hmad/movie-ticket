@@ -16,7 +16,7 @@ Ticket.prototype.ticketPrice = function() {
     var price = "$8.00";
   }
   return (this.movie + ", playing at " + this.time + ", costs " + price);
-}
+};
 
 exports.ticketModule = Ticket;
 
@@ -47,6 +47,10 @@ $(document).ready(function(){
     $('#signup').hide();
     $('#surveyResult').prepend('<p>Thank you, ' + email + ' has been added to our list!</p>');
   });
+});
+
+$(document).ready(function(){
+  $('#time').text(moment());
 });
 
 },{"./../js/movie-ticket.js":1}]},{},[2]);
