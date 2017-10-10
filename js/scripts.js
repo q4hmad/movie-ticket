@@ -19,7 +19,7 @@ Ticket.prototype.ticketPrice = function() {
 
 //Uswer interface logic
 $(document).ready(function() {
-  $("form#movieTicket").submit(function(event) {
+  $("#movieTicket").submit(function(event) {
   event.preventDefault();
 
   var movie = $("input:radio[name=movie]:checked").val();
@@ -27,6 +27,8 @@ $(document).ready(function() {
   var age = parseInt($("input.enter-age").val());
   var ticketInfo = new Ticket(movie, time, age);
   console.log(ticketInfo.ticketPrice());
+  var result = (ticketInfo.ticketPrice());
+  $("#surveyResult").append("<li>" + result + "</li>");
 
 
   });
